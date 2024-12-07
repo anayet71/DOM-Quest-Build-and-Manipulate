@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Donate Bangladesh</title>   
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +22,9 @@
             <img class="w-8" src="assets/logo.png" alt="">
             <p>Donate Bangladesh</p>
         </div>
-        <div>
+        <div class="flex items-center gap-2">
             <img class="w-8" src="assets/coin.png" alt="">
-            <p>5500 BDt</p>
+            <p id="default-balance">5500 </p> <span> BDT</span>
         </div>
         <!-- Navbar end -->
     </header>
@@ -42,8 +41,12 @@
                     <img src="assets/noakhali.png" alt="Noakhali" />
                     <div>
                         <div>
-                            <button class="flex gap-2 items-center bg-gray-100 px-3 py-3 rounded"><img
-                                    src="assets/coin.png" alt="">0 BDT</button>
+                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                                <img class="w-8" src="assets/coin.png" alt="">
+                                <p id="noakhaliBalance">8000 </p> <span> BDT</span>
+                            </div>
+                            <!-- <button id="noakhaliBalance" class="flex gap-2 items-center bg-gray-100 px-3 py-3 rounded"><img
+                                    src="assets/coin.png" alt="">8000 </button><span> BDT</span> -->
                             <h3 class="font-bold  py-3">Donate for Flood at Noakhali, Bangladesh</h3>
                             <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to
                                 homes infrastructure. Your donation will help provide essential supplies and to those
@@ -51,9 +54,9 @@
                                 join us in supporting the relief efforts and making a positive impact on the lives of
                                 those in need.</p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="donateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donation</button>
+                            <div> <button id="DonateNowBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -67,8 +70,10 @@
                     <img src="assets/feni.png" alt="Feni" />
                     <div>
                         <div>
-                            <button class="flex gap-2 items-center bg-gray-100 px-3 py-3 rounded"><img
-                                    src="assets/coin.png" alt="">0 BDT</button>
+                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                                <img class="w-8" src="assets/coin.png" alt="">
+                                <p id="feniBalance">10000 </p> <span> BDT</span>
+                            </div>
                             <h3 class="font-bold  py-3">Donate for Flood Relief in Feni,Bangladesh</h3>
                             <p class="text-gray-500"> The recent floods in Feni have devastated local communities,
                                 leading to severe disruption and loss. Your generous donation will help provide
@@ -77,9 +82,9 @@
                                 aftermath of this disaster. Every contribution counts towards making a real difference.
                                 Please consider donating today to assist those in urgent need.</p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="feniDonateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donation</button>
+                            <div> <button id="feniDonateNowBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -105,7 +110,7 @@
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
                                 <input class="input input-bordered join-item" placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donation</button>
+                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -128,7 +133,7 @@
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
                                 <input class="input input-bordered join-item" placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donation</button>
+                            <div> <button class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -153,7 +158,9 @@
 
         <!-- History section end -->
 
+        <!-- <script src="js/utilities.js"></script> -->
         <script src="js/function.js"></script>
+        <script src="js/addMoney.js"></script>
 
     </main>
     <footer>
