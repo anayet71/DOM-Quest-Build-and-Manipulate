@@ -26,17 +26,51 @@ document.getElementById('feniDonateNowBtn')
         feniTk = document.getElementById("feniBalance").innerText
         getFeniAmount = document.getElementById('feniDonateAmount').value
         companyBalance = document.getElementById('default-balance').innerText
-        if(getFeniAmount > 0){
-            getFeniAmount =  parseFloat(getFeniAmount)
+        if (getFeniAmount > 0) {
+            getFeniAmount = parseFloat(getFeniAmount)
             feniTk = parseFloat(feniTk)
             companyBalance = parseFloat(companyBalance)
             feniLeftBalance = feniTk - getFeniAmount
-            compnayNewBalance = getFeniAmount +  companyBalance
+            compnayNewBalance = getFeniAmount + companyBalance
             document.getElementById("feniBalance").innerText = feniLeftBalance
             document.getElementById('default-balance').innerText = compnayNewBalance
 
-        }else {
+        } else {
             alert("Invalid donation amount");
         }
     })
 
+document.getElementById('quotaDonateNowBtn').addEventListener('click', function (event)
+{event.preventDefault() 
+        quotaTK = document.getElementById('quotaBalance').innerText
+        getQuotaAmount = document.getElementById('quotaDonateAmount').value
+        companyBalance = document.getElementById('default-balance').innerText
+        if(getQuotaAmount > 0){
+            getQuotaAmount =  parseFloat(getQuotaAmount)
+            quotaTK = parseFloat(quotaTK)
+            companyBalance = parseFloat(companyBalance)
+            quotaLeftBalance = quotaTK - getQuotaAmount
+            compnayNewBalance = getQuotaAmount + companyBalance
+            document.getElementById('quotaBalance').innerText = quotaLeftBalance
+            document.getElementById('default-balance').innerText = compnayNewBalance
+
+
+        } else {
+            alert("Invalid donation amount");
+        }
+    })
+
+document.getElementById('rohingaDonateBtn').addEventListener('click', function(){
+    rohingaTk = document.getElementById('rohinaBalance').innerText
+    getRhoingaAmount = document.getElementById('rohingaDonateAmount').value
+    companyBalance = document.getElementById('default-balance').innerText
+    if(getRhoingaAmount >0 ){
+        getRhoingaAmount = parseFloat(getRhoingaAmount)
+        rohingaTk = parseFloat(rohingaTk)
+        companyBalance = parseFloat(companyBalance)
+        rohingaLeftBalance = rohingaTk - getRhoingaAmount
+        compnayNewBalance = getRhoingaAmount + companyBalance
+        document.getElementById('rohinaBalance').innerText = rohingaLeftBalance
+        document.getElementById('default-balance').innerText = compnayNewBalance
+    }
+})
