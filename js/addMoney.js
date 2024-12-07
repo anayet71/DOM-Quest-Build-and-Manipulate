@@ -14,6 +14,15 @@ document.getElementById('DonateNowBtn')
             document.getElementById('noakhaliBalance').innerText = noakhaliLeftBalance;
             document.getElementById('default-balance').innerText = compnayNewBalance;
 
+            // add to transaction history
+            let div = document.createElement('div')
+            div.innerText = `Added: ${getAmount} Tk. for flood affected people at Noakhali, Banladesh`;       
+            console.log(div)
+            div.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
+            document.getElementById('history').appendChild(div)
+
+            
+            
         } else {
             alert("Invalid donation amount");
         }
@@ -35,6 +44,12 @@ document.getElementById('feniDonateNowBtn')
             document.getElementById("feniBalance").innerText = feniLeftBalance
             document.getElementById('default-balance').innerText = compnayNewBalance
 
+            const p = document.createElement('p')
+            p.innerText = `Added: ${getFeniAmount} Tk. for flood affected people at Feni, Banladesh`;       
+            console.log(p)
+            p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
+            document.getElementById('history').appendChild(p)
+
         } else {
             alert("Invalid donation amount");
         }
@@ -54,6 +69,11 @@ document.getElementById('quotaDonateNowBtn').addEventListener('click', function 
             document.getElementById('quotaBalance').innerText = quotaLeftBalance
             document.getElementById('default-balance').innerText = compnayNewBalance
 
+            const p = document.createElement('p')
+            p.innerText = `Added: ${getQuotaAmount} Tk. for Quota movement injured people at Dhaka, Banladesh`;       
+            console.log(p)
+            document.getElementById('history').appendChild(p)
+            p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
 
         } else {
             alert("Invalid donation amount");
@@ -72,5 +92,13 @@ document.getElementById('rohingaDonateBtn').addEventListener('click', function()
         compnayNewBalance = getRhoingaAmount + companyBalance
         document.getElementById('rohinaBalance').innerText = rohingaLeftBalance
         document.getElementById('default-balance').innerText = compnayNewBalance
+
+        const p = document.createElement('p')
+            p.innerText = `Added: ${getRhoingaAmount} Tk. for Rohingya refugee people at Cox's Bazar, Banladesh`;       
+            console.log(p)
+            document.getElementById('history').appendChild(p)
+            p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
+    }else {
+        alert("Invalid donation amount");
     }
 })
