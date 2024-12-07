@@ -66,8 +66,20 @@ document.getElementById('feniDonateNowBtn')
             document.getElementById("feniBalance").innerText = feniLeftBalance
             document.getElementById('default-balance').innerText = compnayNewBalance
 
+             // add to transaction history
+
             const p = document.createElement('p')
-            p.innerText = `Added: ${getFeniAmount} Tk. for flood affected people at Feni, Banladesh`;
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth()
+            const day = currentDate.getDate()
+            const hours = currentDate.getHours()
+            const minutes = currentDate.getMinutes()
+
+            const dateTimeString = ` 
+            Date: (${day}-${month}-${year} )  Time: (${hours}:${minutes})`;
+
+            p.innerText = `Added: ${getFeniAmount} Tk. for flood affected people at Feni, Bangladesh${dateTimeString}`;
             console.log(p)
             p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
             document.getElementById('history').appendChild(p)
@@ -90,12 +102,24 @@ document.getElementById('quotaDonateNowBtn').addEventListener('click', function 
         compnayNewBalance = getQuotaAmount + companyBalance
         document.getElementById('quotaBalance').innerText = quotaLeftBalance
         document.getElementById('default-balance').innerText = compnayNewBalance
+       
 
-        const p = document.createElement('p')
-        p.innerText = `Added: ${getQuotaAmount} Tk. for Quota movement injured people at Dhaka, Banladesh`;
+        let p = document.createElement('p');
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth()
+        const day = currentDate.getDate()
+        const hours = currentDate.getHours()
+        const minutes = currentDate.getMinutes()
+
+        const dateTimeString = ` 
+        Date: (${day}-${month}-${year} )  Time: (${hours}:${minutes})`;
+
+        p.innerText = `Added: ${getQuotaAmount} Tk. for Quota movement injured people at Dhaka, Bangladesh${dateTimeString}`;
+
         console.log(p)
-        document.getElementById('history').appendChild(p)
         p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
+        document.getElementById('history').appendChild(p)
 
     } else {
         alert("Invalid donation amount");
@@ -115,11 +139,24 @@ document.getElementById('rohingaDonateBtn').addEventListener('click', function (
         document.getElementById('rohinaBalance').innerText = rohingaLeftBalance
         document.getElementById('default-balance').innerText = compnayNewBalance
 
-        const p = document.createElement('p')
+        // add to transaction History
+        
+        let p = document.createElement('p');
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = currentDate.getMonth()
+        const day = currentDate.getDate()
+        const hours = currentDate.getHours()
+        const minutes = currentDate.getMinutes()
+
+        const dateTimeString = ` 
+        Date: (${day}-${month}-${year} )  Time: (${hours}:${minutes})`;
+
         p.innerText = `Added: ${getRhoingaAmount} Tk. for Rohingya refugee people at Cox's Bazar, Banladesh`;
+        
         console.log(p)
-        document.getElementById('history').appendChild(p)
         p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
+        document.getElementById('history').appendChild(p)
     } else {
         alert("Invalid donation amount");
     }
