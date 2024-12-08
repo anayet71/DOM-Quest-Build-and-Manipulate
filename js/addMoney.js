@@ -42,6 +42,9 @@ document.getElementById('DonateNowBtn')
             
             // Append the div to the history container
             document.getElementById('history').appendChild(div);
+
+            // show alert
+            alert('You have donated successfully')
             
 
 
@@ -84,6 +87,9 @@ document.getElementById('feniDonateNowBtn')
             p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
             document.getElementById('history').appendChild(p)
 
+            // show alert
+            alert('You have donated successfully')
+
         } else {
             alert("Invalid donation amount");
         }
@@ -102,7 +108,6 @@ document.getElementById('quotaDonateNowBtn').addEventListener('click', function 
         compnayNewBalance = getQuotaAmount + companyBalance
         document.getElementById('quotaBalance').innerText = quotaLeftBalance
         document.getElementById('default-balance').innerText = compnayNewBalance
-       
 
         let p = document.createElement('p');
         const currentDate = new Date();
@@ -120,6 +125,8 @@ document.getElementById('quotaDonateNowBtn').addEventListener('click', function 
         console.log(p)
         p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
         document.getElementById('history').appendChild(p)
+        // show alert
+        alert('You have donated successfully')
 
     } else {
         alert("Invalid donation amount");
@@ -157,6 +164,10 @@ document.getElementById('rohingaDonateBtn').addEventListener('click', function (
         console.log(p)
         p.classList.add('p-6', 'mb-6', 'border-2', 'border-gray-100', 'rounded-md')
         document.getElementById('history').appendChild(p)
+
+        // show alert
+        alert('You have donated successfully')
+        
     } else {
         alert("Invalid donation amount");
     }

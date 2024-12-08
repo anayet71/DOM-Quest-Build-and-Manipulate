@@ -4,45 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>   
+    <title>Donate Bangladesh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-
 <body class="max-w-screen-2xl m-auto" style="font-family: 'Lexend', sans-serif;">
-    <header class="flex flex-col gap-4 sm:flex-row justify-around items-center pt-6 pb-11 bg-gray-100 sticky top-0">
-        <!-- Navbar start -->
-        <div class="">
-            <button class="bg-lime-400 py-2 px-4 rounded-md font-bold">Blog</button>
+    <!-- Navbar start -->
+    <header class="sticky top-0  bg-white/30 backdrop-blur-md pb-12 ">
+        <div class="flex flex-col gap-4 sm:flex-row justify-around items-center pt-6 pb-11 bg-gray-100 mb-28 ">
+            <div>
+                <button class="bg-lime-400 py-2 px-4 rounded-md font-bold">Blog</button>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="assets/logo.png" alt="">
+                <p>Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="assets/coin.png" alt="">
+                <p id="default-balance">5500 </p> <span> BDT</span>
+            </div>
         </div>
-        <div class="flex items-center gap-2">
-            <img class="w-8" src="assets/logo.png" alt="">
-            <p>Donate Bangladesh</p>
-        </div>
-        <div class="flex items-center gap-2">
-            <img class="w-8" src="assets/coin.png" alt="">
-            <p id="default-balance">5500 </p> <span> BDT</span>
-        </div>
-        <!-- Navbar end -->
-    </header>
-    <main class="w-3/4 m-auto mt-36   ">
-        <div class="text-center mb-12">
+        <div class="text-center ">
             <button id="donation-btn" class="bg-lime-400 py-2 px-4 rounded-md font-bold">Donation</button>
             <button id="history-btn" class="bg-gray-100 py-2 px-4 rounded-md font-bold">History</button>
         </div>
+    </header>
+    <!-- Navbar end -->
+
+    <main class="w-3/4 m-auto mt-12   ">
+
         <!-- Donation section start -->
         <div id="donation">
             <!-- Card Section 1 start -->
             <section class="mb-7">
-                <div class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
-                  
+                <div
+                    class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
+
                     <img src="assets/noakhali.png" alt="Noakhali" />
                     <div>
                         <div>
-                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                            <div class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
                                 <img class="w-8" src="assets/coin.png" alt="">
                                 <p id="noakhaliBalance">8000 </p> <span> BDT</span>
                             </div>
@@ -55,9 +59,11 @@
                                 join us in supporting the relief efforts and making a positive impact on the lives of
                                 those in need.</p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input id="donateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="donateAmount" class="input input-bordered join-item"
+                                    placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button id="DonateNowBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
+                            <div> <button id="DonateNowBtn"
+                                    class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -67,11 +73,12 @@
 
             <!-- Card Section 2 Start -->
             <section class="mb-7">
-                <div class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
+                <div
+                    class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
                     <img src="assets/feni.png" alt="Feni" />
                     <div>
                         <div>
-                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                            <div class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
                                 <img class="w-8" src="assets/coin.png" alt="">
                                 <p id="feniBalance">10000 </p> <span> BDT</span>
                             </div>
@@ -83,9 +90,11 @@
                                 aftermath of this disaster. Every contribution counts towards making a real difference.
                                 Please consider donating today to assist those in urgent need.</p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input id="feniDonateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="feniDonateAmount" class="input input-bordered join-item"
+                                    placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button id="feniDonateNowBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
+                            <div> <button id="feniDonateNowBtn"
+                                    class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -94,11 +103,12 @@
             <!-- Card Section 2 end -->
             <!-- Card Section 3 Start -->
             <section class="mb-7">
-                <div class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
+                <div
+                    class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
                     <img src="assets/quota-protest.png" alt="quota" />
                     <div>
                         <div>
-                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                            <div class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
                                 <img class="w-8" src="assets/coin.png" alt="">
                                 <p id="quotaBalance">5000 </p> <span> BDT</span>
                             </div>
@@ -111,9 +121,11 @@
                                 and aiding in their recovery. Please consider making a donation to support these brave
                                 individuals in their time of need.</p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input id="quotaDonateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="quotaDonateAmount" class="input input-bordered join-item"
+                                    placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button id="quotaDonateNowBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
+                            <div> <button id="quotaDonateNowBtn"
+                                    class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -122,11 +134,12 @@
             <!-- Card Section 3 end -->
             <!-- Card Section 4 Start -->
             <section class="mb-7">
-                <div class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
+                <div
+                    class="  flex flex-col justify-evenly gap-6 sm:flex-row card  border-2  border-gray-100  p-9 rounded-xl">
                     <img class="rounded-xl" src="assets/ronhinga2.png" alt="Noakhali" />
                     <div>
                         <div>
-                            <div  class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
+                            <div class=" flex gap-2 items-center bg-gray-100 px-3 py-3 rounded w-36 ">
                                 <img class="w-8" src="assets/coin.png" alt="">
                                 <p id="rohinaBalance">70000 </p> <span> BDT</span>
                             </div>
@@ -136,9 +149,11 @@
                                 experienced ethnic and religious persecution in Myanmar for decades.The majority have
                                 escaped to Bangladesh, where there are two official, registered refugee camps. </p>
                             <div class=" my-4 p-4 border-2  border-gray-100 rounded-md">
-                                <input id="rohingaDonateAmount" class="input input-bordered join-item" placeholder="Write Donation Amount " />
+                                <input id="rohingaDonateAmount" class="input input-bordered join-item"
+                                    placeholder="Write Donation Amount " />
                             </div>
-                            <div> <button id="rohingaDonateBtn" class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
+                            <div> <button id="rohingaDonateBtn"
+                                    class=" w-full bg-lime-400 py-2 px-4 rounded-md font-bold">Donate Now</button>
                             </div>
                         </div>
                     </div>
@@ -150,7 +165,7 @@
 
         <!-- History section start -->
         <section id="history" class="hidden">
-           
+
         </section>
 
         <!-- History section end -->
